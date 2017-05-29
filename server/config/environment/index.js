@@ -22,7 +22,7 @@ var all = {
   port: process.env.PORT || 9000,
 
   // Server IP
-  ip: 'https://cccchallengedashboard.herokuapp.com/',
+  ip: process.env.IP || '0.0.0.0',
 
   // Should we populate the DB with sample data?
   seedDB: false,
