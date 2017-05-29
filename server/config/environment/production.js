@@ -9,15 +9,10 @@ module.exports = {
             undefined,
 
   // Server port
-  port:     process.env.OPENSHIFT_NODEJS_PORT ||
-            process.env.PORT ||
-            8080,
+  port:     80,
 
   // MongoDB connection options
   mongo: {
-    uri:    process.env.MONGOLAB_URI ||
-            process.env.MONGOHQ_URL ||
-            process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
-            'mongodb://localhost/fccuserlist'
+    uri:    'mongodb://heroku_dtpcc18z:l3oo03ja6mms2gicfgql703hrb@ds143911-a0.mlab.com:43911,ds143911-a1.mlab.com:43911/heroku_dtpcc18z?replicaSet=rs-ds143911'
   }
 };
